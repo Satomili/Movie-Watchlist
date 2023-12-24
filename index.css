@@ -1,0 +1,205 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    user-select: none;
+}
+
+/* --layout----------------------------------------------------- */
+
+/* body */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* header */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 30px;
+    background-image: url("header-img.png");
+    background-size: cover;
+    gap: 100px;
+}
+
+/* search container */
+#search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e2e2f;
+    border-radius: 6px;
+    width: 460px;
+    align-self: center;
+}
+
+#input-field {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+#input-field i {
+    padding-right: 10px;
+    color: #9CA3AF;
+}
+
+input {
+    width: 100%;
+    border: none;
+    background-color: #2E2E2F;
+    color: #FFFFFF;
+}
+
+input:focus {
+    outline: none;
+}
+
+#search-button {
+    border: none;
+    background-color: #4B4B4B;
+    border-radius: 6px;
+    padding: 10px 30px;
+    color: #FFFFFF;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* main container */
+
+#movielist-container,
+#watchlist-container,
+.msg {
+    min-width: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2E2E2F;
+    margin: 0 auto;
+}
+
+.msg {
+    height: 80vh;   
+}
+
+
+#film-icon {
+    font-size: 70px;
+}
+
+/* movie-list */
+#movie-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 460px;
+    margin: 20px auto;
+}
+
+.movie-poster {
+    width: 99px;
+    height: 147.41px;
+}
+
+#movie-info-one {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.movie-title {
+    max-width: 290px;
+    margin: 10px 0;
+}
+
+.movie-imdbRating {
+    min-width: 37px;
+}
+
+#movie-info-two {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    background-color: #121212;
+    border: none;
+    color: #ffffff;
+    gap: 5px;
+}
+
+#watchlist-add-button {
+    display: flex;
+    gap: 5px;  
+}
+
+#watchlist-add-button p {
+    margin: 0;
+}
+
+
+
+hr {
+    color: white;
+    border: 1.5px solid #2C2C2C;
+    min-width: 460px;
+}
+
+/* ---------------------------------------------- */
+
+/* --typography----------------------------------- */
+
+h1 {
+    font-weight: 800;
+    font-size: 42px;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#header p a {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* main-container-msg / movie-title */
+h2 {
+    font-size: 18px;
+}
+
+.movie-title {
+    text-align: left;
+    color: #FFFFFF;
+}
+
+/* movie-imdbRating / movie-info-one */
+p{
+    font-size: 12px;
+    margin: 7px 0;
+    color: #FFFFFF;
+}
+
+.movie-plot {
+    font-size: 14px;
+    color: #A5A5A5;
+    text-align: left;
+}
